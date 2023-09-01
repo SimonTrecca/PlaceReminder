@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/see_placelist"
+        android:title="Check placemarks"
+        android:icon="@drawable/check_list_logo"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/add_place"
+        android:title="Insert placemark"
+        android:icon="@drawable/add_logo"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/go_to_place"
+        android:title="Insert placemark"
+        android:icon="@drawable/go_to_logo"
+        app:showAsAction="ifRoom"/>
+
+</menu>
