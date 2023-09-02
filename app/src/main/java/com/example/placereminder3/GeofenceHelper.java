@@ -21,9 +21,7 @@ public class GeofenceHelper extends ContextWrapper {
     }
 
     public GeofencingRequest getGeofencingRequest(List<Geofence> geofences){
-        for(Geofence g:geofences){
-            Log.d("Among us", "pos: "+g.getLatitude()+" "+g.getLongitude()+" "+g.toString());
-        }
+
         return new GeofencingRequest.Builder()
                 .addGeofences(geofences)
                 .setInitialTrigger(GeofencingRequest.INITIAL_TRIGGER_ENTER)

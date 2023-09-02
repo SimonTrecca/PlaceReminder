@@ -73,7 +73,7 @@ public class PlacemarkListRecyclerAdapter extends RecyclerView.Adapter<Placemark
                 for(int i=0;i<placemarks.size();i++){
                     names.add(placemarks.get(i).getName());
                 }
-                Log.d("ErrorTag", placemarks.size()+" "+placemarks);
+
                 intent.putStringArrayListExtra("placemarkNames",names);
                 intent.putExtra("currentEntry",placemarks.get(pos));
                 intent.putExtra("position",pos);

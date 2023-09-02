@@ -31,6 +31,8 @@ public class ManageGeofencesReceiver extends BroadcastReceiver {
         geofenceHelper = new GeofenceHelper(context);
         geofencingClient = LocationServices.getGeofencingClient(context);
         geofences=new ArrayList<>();
+
+        resetGeofences(geofenceHelper.getPendingIntent());
     }
 
     @Override
@@ -100,4 +102,9 @@ public class ManageGeofencesReceiver extends BroadcastReceiver {
         removeGeofence(position);
         addGeofence(entry);
     }
+
+    private void resetGeofences(PendingIntent intent) {
+        geofencingClient.removeGeofences(intent);
+    }
+
 }

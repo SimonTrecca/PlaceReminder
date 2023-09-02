@@ -33,7 +33,6 @@ public class PlacemarkReceiver extends BroadcastReceiver {
 
         if(id.equals("placemark_modified")){
             PlacemarkEntry tmp=intent.getParcelableExtra("placemark");
-            Log.d("a", "placemarks:"+placemarks);
             int pos=intent.getIntExtra("position",0);
             placemarks.remove(pos);
             placemarks.add(0,tmp);
