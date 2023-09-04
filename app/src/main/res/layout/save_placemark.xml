@@ -18,13 +18,13 @@
         android:layout_height="wrap_content"
         app:tabMode="scrollable"
         app:tabGravity="center"
-        android:contentDescription="Amogus"/>
+        android:contentDescription="Tabs"/>
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPager"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:contentDescription="Sus"/>
+        android:contentDescription="Views"/>
 
 
 </LinearLayout>
